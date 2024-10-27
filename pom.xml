@@ -18,8 +18,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.12.6</scala.version>
-    <scala.compat.version>2.12</scala.compat.version>
+    <scala.version>2.11.11</scala.version>
+    <scala.compat.version>2.11</scala.compat.version>
     <spec2.version>4.2.0</spec2.version>
   </properties>
 
@@ -30,11 +30,66 @@
       <version>${scala.version}</version>
     </dependency>
 
+    <!--    ScalaJ HTTP-->
+    <!-- https://mvnrepository.com/artifact/org.scalaj/scalaj-http -->
+    <dependency>
+      <groupId>org.scalaj</groupId>
+      <artifactId>scalaj-http_2.11</artifactId>
+      <version>2.4.2</version>
+    </dependency>
+
+<!-- sttp-->
+    <!-- https://mvnrepository.com/artifact/com.softwaremill.sttp.client3/core -->
+    <dependency>
+      <groupId>com.softwaremill.sttp.client3</groupId>
+      <artifactId>core_2.11</artifactId>
+      <version>3.9.4</version>
+    </dependency>
+
+
+    <!-- sttp async-http-client backend for Scala 2.11 -->
+    <dependency>
+      <groupId>com.softwaremill.sttp.client</groupId>
+      <artifactId>async-http-client-backend-future_2.11</artifactId>
+      <version>2.2.9</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.circe/circe-core -->
+    <dependency>
+      <groupId>io.circe</groupId>
+      <artifactId>circe-core_2.11</artifactId>
+      <version>0.12.0-M3</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.circe/circe-parser -->
+    <dependency>
+      <groupId>io.circe</groupId>
+      <artifactId>circe-parser_2.11</artifactId>
+      <version>0.12.0-M3</version>
+    </dependency>
+
+    <!-- Async HTTP client backend for STTP -->
+    <!-- https://mvnrepository.com/artifact/com.softwaremill.sttp.client3/async-http-client-backend-future -->
+    <dependency>
+      <groupId>com.softwaremill.sttp.client3</groupId>
+      <artifactId>async-http-client-backend-future_2.11</artifactId>
+      <version>3.9.4</version>
+    </dependency>
+
+    <!-- Akka Actor for scheduling delays asynchronously -->
+    <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-actor_2.11</artifactId>
+      <version>2.5.32</version>
+    </dependency>
+
+
     <!-- Test -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
